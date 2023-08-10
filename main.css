@@ -1,0 +1,144 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+*{
+margin: 0;
+box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+} */
+/* body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+} */
+
+.container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--dark);
+}
+.card{
+    /* display: flex; */
+    background-color: var(--darker);
+    width: 100%;
+    max-width: 700px;
+    padding: 2.5rem;
+    min-height: 80vh;
+    /* width: 60%; */
+    /* overflow: scroll; */
+    border-radius: 2rem;
+}
+.card h1{
+    font-size: 2rem;
+  
+    color: var(--grey);
+}
+.card-body{
+    display: flex;
+}
+#form-input{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content:space-evenly;
+    
+}
+input,button{
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 12px;
+}
+#input-el{
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: var(--light);
+    background-color: var(--darkest);
+    border-radius: 10px;
+    display: block;
+    width: 350px;
+   
+}
+
+#button-el{
+    color:var(--light);
+    font-size: 1.30rem;
+    margin-left: 1rem;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#button-el:hover{
+    opacity: 0.8;
+}
+#lists .output {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+.output .contant {
+	flex: 1 1 0%;
+}
+.output .contant {
+	flex: 1 1 0%;
+}
+.output .contant .text {
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+.output .contant .text:not(:read-only) {
+	color: var(--pink);
+}
+.output .action {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+.output .action button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.output .action button:hover {
+	opacity: 0.8;
+}
+.output .action .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.output .action .delete {
+	color: crimson;}
+
+    @media (max-width: 550px){
+        #input-el{
+            width: 250px;
+        }
+        .output{
+            width:auto;
+        }
+    }   
